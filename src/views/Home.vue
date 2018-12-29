@@ -1,18 +1,24 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+      <mark-down/>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
+import MarkDown from 'vue-meditor'
 export default {
   name: 'home',
   components: {
-    HelloWorld
+    MarkDown
   }
 }
 </script>
+<style lang="less" scoped>
+.home{
+    .v-note-wrapper{
+      height: 100vh;
+    }
+}
+</style>
+
